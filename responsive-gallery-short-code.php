@@ -259,59 +259,25 @@ function WRGF_ShortCode_Page( $Id ) {
     <script type="text/javascript">
       (function (jQuery) {
 			jQuery(window).imagesLoaded(function () {
-			jQuery( window ).load(function() {
-   			jQuery('.gallery1').masonry({
-                itemSelector: '.wl-gallery',
-                isAnimated: true,
-                isFitWidth: true
-            });
-		}); });
-			// jQuery('.gallery1').imagesLoaded(function () {
-   //          jQuery('.gallery1').masonry({
-   //              itemSelector: '.wl-gallery',
-   //              isAnimated: true,
-   //              isFitWidth: true
-   //          });
-   //      });
+				jQuery( window ).load(function() {
+					jQuery('.gallery1').masonry({
+						itemSelector: '.wl-gallery',
+						isAnimated: true,
+						isFitWidth: true
+					});
+				}); 
+			});
+
         	jQuery('.swipebox').imagesLoaded(function () {
-            jQuery('.swipebox').swipebox({
-                hideBarsDelay: 0,
-                hideCloseButtonOnMobile: false,
+				jQuery('.swipebox').swipebox('.swipebox' , {
+					hideBarsDelay: 0,
+					hideCloseButtonOnMobile: false,
+				});
             });
-             });
-//         	     jQuery('.gallery1').imagesLoaded(function () {
-//             jQuery('.gallery1').masonry({
-//                 itemSelector: '.wl-gallery',
-//                 isAnimated: true,
-//                 isFitWidth: true
-//             });
-//         });
+
         })(jQuery);
 
-        // jQuery('.gallery1').imagesLoaded(function () {
-        //     jQuery('.gallery1').masonry({
-        //         itemSelector: '.wl-gallery',
-        //         isAnimated: true,
-        //         isFitWidth: true
-        //     });
-        // });
     </script> 
-   <!--  <script type="text/javascript">
-        ;(function (jQuery) {
-            jQuery('.swipebox').swipebox({
-                hideBarsDelay: 0,
-                hideCloseButtonOnMobile: false,
-            });
-        })(jQuery);
-
-        jQuery('.gallery1').imagesLoaded(function () {
-            jQuery('.gallery1').masonry({
-                itemSelector: '.wl-gallery',
-                isAnimated: true,
-                isFitWidth: true
-            });
-        });
-    </script> -->
 
 	<?php wp_reset_query();
 
